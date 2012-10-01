@@ -51,6 +51,11 @@ public class GuiDustCart extends javax.swing.JInternalFrame {
         initComponents();
        graficar();
     }
+    
+    
+   /*
+    Otro comentario
+    */
 
     /**
      * This method is called from within the constructor to initialize the form.
