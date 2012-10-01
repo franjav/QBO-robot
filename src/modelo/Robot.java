@@ -19,35 +19,31 @@ public class Robot {
     public Robot(int ambiente[][], Point posicionActual) {
         this.ambiente=ambiente;
         this.posicionActual=posicionActual;
-    }
-    
-    
-
-  
-    
+    }    
+        
     public boolean atrazSensor(){
       if(posicionActual.y==0){
-         avanzar=false;  
-         encontro="nopuedo";
+          avanzar=false;  
+          encontro="nopuedo";
         }else{
                 if(ambiente[posicionActual.x][posicionActual.y-1]!=1){
                    if(ambiente[posicionActual.x][posicionActual.y-1]==2){
                     encontro="2k";  
-                    avanzar=true;
+                     avanzar=true;
                    }if(ambiente[posicionActual.x][posicionActual.y-1]==3){
                     encontro="3k";
-                    avanzar=true;
+                     avanzar=true;
                    }if(ambiente[posicionActual.x][posicionActual.y-1]==4){
                     encontro="inicio";
-                    avanzar=true;
+                     avanzar=true;
                    }if(ambiente[posicionActual.x][posicionActual.y-1]==5){
                     encontro="deposito";
-                   avanzar=true;
+                     avanzar=true;
                    }                    
                   }else{
-                        avanzar=false;  
-                        encontro="muro";
-                        }        
+                         avanzar=false;  
+                         encontro="muro";
+                       }        
              }
        return avanzar;
     }
@@ -81,8 +77,8 @@ public class Robot {
     
    public boolean abajoSensor(){
        if(posicionActual.x==ambiente.length){
-          avanzar=false;          
-          encontro="nopuedo";
+             avanzar=false;          
+             encontro="nopuedo";
        }else{
            if(ambiente[posicionActual.x+1][posicionActual.y]!=1){
              if(ambiente[posicionActual.x+1][posicionActual.y]==2){
@@ -132,7 +128,7 @@ public class Robot {
                encontro="muro";
            }       
        }
-   return avanzar;
+     return avanzar;
    }
     
       public Point getPosicionActual() {
