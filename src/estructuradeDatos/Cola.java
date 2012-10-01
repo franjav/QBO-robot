@@ -15,16 +15,29 @@ public class Cola {
     
     Vector vector=new Vector();
     
-    
-    public void remover(Nodo nodo){
-      vector.remove(nodo);         
+    /*Estos los utilizaremos cuando sea un vector normal*/
+    public Nodo remover(){
+      vector.remove(0);
+      Nodo tmp=(Nodo)vector.get(0);
+		vector.remove(0);
+		return tmp;
     }
     
     
     public void agregar(Nodo nodo){
        vector.add(nodo);
     }
+    /*Estos los utilizaremos cuando utilicemos una cola */
     
+    public void encolar(Nodo nod){
+	vector.add(nod);
+	}
+	
+    public Nodo desEncolar(){
+      Nodo tmp=(Nodo)vector.get(0);
+      vector.remove(0);
+      return tmp;
+    }
     
     
     
