@@ -140,6 +140,7 @@ public class CargarMundo extends JFrame {
     
     public void imprimirDatos(){
         System.out.println("Inicio > "+pInicio.toString() );
+        
         System.out.println("P Reciclaje > "+pReciclaje.toString() );
         System.out.println("Deposito 2k > "+pDeposito2k.toString() );
         System.out.println("Deposito 3k > "+pDeposito3k.toString() );
